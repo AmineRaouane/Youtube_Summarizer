@@ -1,0 +1,275 @@
+.App_Container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #141414;
+  justify-content: center;
+}
+
+.Header {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #141414;
+}
+.Header p{
+  font-size: 17px;
+}
+.Title{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.LeftContainer {
+  width: 35%;
+  height: 100%;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LeftContainer .Video_wrapper {
+  height: 90.5%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #3E3E3E;
+  border-radius: 15px;
+  
+}
+.Video {
+  width: 80%;
+  height: fit-content;
+  max-height: 45%;
+  background-color: #141414;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow */
+}
+.Video_infos{
+  width: 80%;
+  height: 45%;
+  background-color: #141414;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Video_infos p{
+  width: 85%;
+  min-height: 15%;
+  max-height: 20%;
+  background-color: #202020;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+/* .Video img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+} */
+.input_wrapper {
+  height: 80%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px dashed #3E3E3E;
+  border-radius: 15px;
+  padding: 5px;
+}
+.input_Container{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+}
+.input_wrapper button{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 60%;
+  width: 15%;
+}
+.inputField {
+  width: 80%;
+  height: 60%;
+  border-radius: 10px;
+  border: 0px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+.RightContainer {
+  width: 55%;
+  height: 100%;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.Toggle_wrapper{
+  width: 91%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3E3E3E;
+  border-radius: 15px;
+}
+.Toggle{
+  width: 95%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Toggle button{
+  width: 35%;
+  height: 60%;
+  border: 0px;
+  border-radius: 10px;
+}
+.Toggle button.active {
+  background-color: #221f1f;
+  color: white;
+}
+
+.Content_Container{
+  width: 91%;
+  height: 80%;
+  background-color: #3E3E3E;
+  border-radius: 15px;
+  display: flex;
+}
+.Concepts_wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Summary_wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Summary{
+  width: 92.5%;
+  height: 85%;
+  border-radius: 10px;
+  background-color: #323131;
+  display: flex;
+  overflow: auto;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+.Concepts {
+  width: 90%;
+  height: 85%;
+  border-radius: 10px;
+  background-color: #323131;
+  display: flex;
+  overflow: auto;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-item {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Concept {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #141414;
+  border-radius: 5px;
+  font-size: 8.5px;
+  height: 35px;
+}
+.Concept button{
+  background-color: #141414;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+}
+.Concept button:hover{
+  scale: 1.2;
+  transition: 0.5s;
+  background-color: #27292c;
+}
+.Concept h1{
+  width: 80%;
+}
+.Concept p{
+  font-size: 12px;
+}
+
+
+.Definition {
+  height: 0;
+  overflow: auto;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0 15px; 
+  border-radius: 5px;
+  background-color: #00C896;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Definition.expanded {
+  height: 500px; 
+}
+
+.Definition a{
+  width: 50%;
+  height: 50%;
+}
+.Definition img{
+  width: 90%;
+  height: 90%;
+}
+.Title_time{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 50%;
+}
